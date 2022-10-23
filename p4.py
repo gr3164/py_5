@@ -89,7 +89,7 @@ while True:
     user = (int(input("По горизонтали: "))-1, int(input("По вертикали: "))-1)
 
     if user in error:
-        print("Ошибка")
+        print(f'Ошибка координаты: ({user[0]+1},{user[1]+1}) заняты.\nВведите координаты заново:')
         user = (int(input("По горизонтали: "))-1, int(input("По вертикали: "))-1)
     else:
         box[user[0]][user[1]] = 'X'
